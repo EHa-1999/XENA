@@ -2,6 +2,8 @@
 
 **English** · [Nederlands](README.nl.md) · [Deutsch](README.de.md)
 
+**▶ [Open the demo](https://eha-1999.github.io/XENA/#en)** · also in [Nederlands](https://eha-1999.github.io/XENA/#nl) · [Deutsch](https://eha-1999.github.io/XENA/#de) · [Français](https://eha-1999.github.io/XENA/#fr) · [Español](https://eha-1999.github.io/XENA/#es) · [Italiano](https://eha-1999.github.io/XENA/#it) · [Polski](https://eha-1999.github.io/XENA/#pl)
+
 An interactive demo of what sovereign, records-grade file storage on **Nextcloud** and **S3 object storage** looks like for an ordinary municipal employee. Retention, legal hold, metadata and access rules are enforced underneath, while people keep working in the windows they already know.
 
 ![File Explorer view with the properties panel](docs/screenshot-explorer.png)
@@ -14,7 +16,7 @@ An interactive demo of what sovereign, records-grade file storage on **Nextcloud
 
 Open `index.html` in a browser. It is a single self-contained file: no installation, no build step, no server.
 
-If GitHub Pages is enabled for this repository, the demo is also available at `https://<account>.github.io/<repository>/`.
+Or open it online: **[https://eha-1999.github.io/XENA/](https://eha-1999.github.io/XENA/)**. Add a language code to open it in that language, for example `https://eha-1999.github.io/XENA/#de`.
 
 ## What the demo shows
 

@@ -2,6 +2,8 @@
 
 [English](README.md) · [Nederlands](README.nl.md) · **Deutsch**
 
+**▶ [Demo öffnen](https://eha-1999.github.io/XENA/#de)** · auch auf [English](https://eha-1999.github.io/XENA/#en) · [Nederlands](https://eha-1999.github.io/XENA/#nl) · [Français](https://eha-1999.github.io/XENA/#fr) · [Español](https://eha-1999.github.io/XENA/#es) · [Italiano](https://eha-1999.github.io/XENA/#it) · [Polski](https://eha-1999.github.io/XENA/#pl)
+
 Eine interaktive Demo, die zeigt, wie souveräne, revisionssichere Dateiablage auf **Nextcloud** und **S3-Objektspeicher** für Beschäftigte einer Kommunalverwaltung aussieht. Aufbewahrungsfristen, Legal Hold, Metadaten und Zugriffsregeln werden im Hintergrund durchgesetzt, während die Beschäftigten in den Oberflächen weiterarbeiten, die sie bereits kennen.
 
 ![Explorer mit dem Eigenschaftenbereich](docs/screenshot-explorer.png)
@@ -14,7 +16,7 @@ Eine interaktive Demo, die zeigt, wie souveräne, revisionssichere Dateiablage a
 
 Öffnen Sie `index.html` in einem Browser. Es ist eine einzige, eigenständige Datei: keine Installation, kein Build-Schritt, kein Server.
 
-Ist GitHub Pages für dieses Repository aktiviert, ist die Demo auch unter `https://<konto>.github.io/<repository>/` erreichbar.
+Oder online öffnen: **[https://eha-1999.github.io/XENA/](https://eha-1999.github.io/XENA/)**. Mit einem Sprachcode öffnet sie sich in dieser Sprache, zum Beispiel `https://eha-1999.github.io/XENA/#en`.
 
 ## Was die Demo zeigt
 

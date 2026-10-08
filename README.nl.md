@@ -2,6 +2,8 @@
 
 [English](README.md) · **Nederlands** · [Deutsch](README.de.md)
 
+**▶ [Open de demo](https://eha-1999.github.io/XENA/#nl)** · ook in [English](https://eha-1999.github.io/XENA/#en) · [Deutsch](https://eha-1999.github.io/XENA/#de) · [Français](https://eha-1999.github.io/XENA/#fr) · [Español](https://eha-1999.github.io/XENA/#es) · [Italiano](https://eha-1999.github.io/XENA/#it) · [Polski](https://eha-1999.github.io/XENA/#pl)
+
 Een interactieve demo van hoe soevereine, archiefwaardige bestandsopslag op **Nextcloud** en **S3-objectopslag** eruitziet voor een gewone medewerker van een gemeente. Bewaartermijnen, legal hold, metagegevens en toegangsregels worden eronder afgedwongen, terwijl medewerkers blijven werken in de vensters die ze al kennen.
 
 ![De Verkenner met het eigenschappenpaneel](docs/screenshot-explorer.png)
@@ -14,7 +16,7 @@ Een interactieve demo van hoe soevereine, archiefwaardige bestandsopslag op **Ne
 
 Open `index.html` in een browser. Het is één zelfstandig bestand: geen installatie, geen buildstap, geen server.
 
-Staat GitHub Pages aan voor deze repository, dan is de demo ook te openen via `https://<account>.github.io/<repository>/`.
+Of open hem online: **[https://eha-1999.github.io/XENA/](https://eha-1999.github.io/XENA/)**. Met een taalcode erachter opent hij in die taal, bijvoorbeeld `https://eha-1999.github.io/XENA/#de`.
 
 ## Wat de demo laat zien
 
