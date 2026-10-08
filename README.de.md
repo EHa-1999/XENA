@@ -25,7 +25,7 @@ Oder online öffnen: **[https://eha-1999.github.io/XENA/](https://eha-1999.githu
 | **Explorer** | Der Datei-Explorer auf dem PC mit den Laufwerken M:, P:, I: und W:. Jedes Laufwerk ist ein Bucket in einer einzigen Nextcloud-Umgebung. |
 | **Dokumentbibliothek** | Die Dateiliste auf einer Teamwebsite, zum Beispiel SharePoint, mit Spalten für Klassifikation und Aufbewahrung. |
 | **Teamkanal** | Die Registerkarte Dateien in einem Teamkanal, zum Beispiel Teams. Wählbar sind die Kanaldateien oder ein verbundenes Laufwerk. |
-| **Office-Assistent** | Ein Add-in in Word mit Merkmalen, Vorschlägen, Barrierefreiheit und Workflow neben dem Dokument. |
+| **Office-Assistent** | Ein Add-in für Office-Pakete, hier in Word gezeigt: Merkmale, Vorschläge, Barrierefreiheit und Workflow neben dem Dokument. Derselbe Aufbau funktioniert in LibreOffice und anderen Paketen: eine dünne Zwischenschicht, je Paket ein kleines Add-in. |
 | **Architektur** | Wie Oberflächen, Nextcloud, Register und Objektspeicher zusammenhängen, mit Beispielen für WebDAV- und S3-Nachrichten. |
 | **Technik** | Je Funktion, was sie von Nextcloud verlangt: Standard, Erweiterungspunkt, Kernänderung oder etwas außerhalb von Nextcloud. |
 | **Roadmap** | In sechs Schritten von den Netzlaufwerken zum Zielbild, mit Meilensteinen und Entscheidungspunkten. |
@@ -79,7 +79,7 @@ Innerhalb von claude.ai funktioniert die Verbindung nicht, weil Seiten dort kein
 
 ## Architektur und Roadmap in Kürze
 
-- **Präsentationsschicht:** Explorer, Office mit dem Office-Assistenten, Dokumentbibliothek, Teamkanal, Nextcloud Files im Browser, Nextcloud-Client.
+- **Präsentationsschicht:** Explorer, Office-Pakete (Word, LibreOffice und andere) mit dem Office-Assistenten, Dokumentbibliothek, Teamkanal, Nextcloud Files im Browser, Nextcloud-Client.
 - **Nextcloud:** WebDAV-Endpunkt, Files, eine Governance- und Archiv-App, die Speicherschnittstelle.
 - **Revisionssichere Schicht:** Objektregister, Resolver und Schlüsselverwaltung neben S3-Objektspeicher mit Versionierung, Object Lock und Legal Hold; ein Bucket je Laufwerk.
 - **Sechs Anforderungen an Nextcloud:** Änderungsbenachrichtigung, delegierte Versionshistorie, schreibgeschützte Metadaten aus dem Register, gesteuerte Löschung, dauerhafte Identität und von der Datei zum Informationsobjekt. Nur Anforderung 3 und 4 gehören zum aktuellen Auftrag.

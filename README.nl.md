@@ -25,7 +25,7 @@ Of open hem online: **[https://eha-1999.github.io/XENA/](https://eha-1999.github
 | **Verkenner** | De bestandsverkenner op de pc met de schijven M:, P:, I: en W:. Elke schijf is een bucket in één Nextcloud-omgeving. |
 | **Documentbibliotheek** | De bestandenlijst op een samenwerkingssite, bijvoorbeeld SharePoint, met kolommen voor classificatie en bewaring. |
 | **Teamkanaal** | Het tabblad Bestanden in een teamkanaal, bijvoorbeeld Teams. Kies de kanaalbestanden of een gekoppelde schijf. |
-| **Office Assistent** | Een invoegtoepassing in Word met kenmerken, suggesties, toegankelijkheid en workflow naast het document. |
+| **Office Assistent** | Een invoegtoepassing voor kantoorpakketten, hier getoond in Word: kenmerken, suggesties, toegankelijkheid en workflow naast het document. Dezelfde opzet werkt in LibreOffice en andere pakketten: één dunne tussenlaag, met per pakket een kleine invoegtoepassing. |
 | **Architectuur** | Hoe vensters, Nextcloud, register en objectopslag samenhangen, met voorbeelden van WebDAV- en S3-berichten. |
 | **Techniek** | Per functie wat die van Nextcloud vraagt: standaard, uitbreidingspunt, kernwijziging of iets buiten Nextcloud. |
 | **Groeipad** | In zes stappen van de netwerkschijven naar de stip op de horizon, met mijlpalen en beslismomenten. |
@@ -79,7 +79,7 @@ Binnen claude.ai werkt de koppeling niet, omdat pagina's daar geen verbindingen 
 
 ## Architectuur en groeipad in het kort
 
-- **Presentatielaag:** Verkenner, Office met de Office Assistent, documentbibliotheek, teamkanaal, Nextcloud Files in de browser, Nextcloud-client.
+- **Presentatielaag:** Verkenner, kantoorpakketten (Word, LibreOffice en andere) met de Office Assistent, documentbibliotheek, teamkanaal, Nextcloud Files in de browser, Nextcloud-client.
 - **Nextcloud:** WebDAV-eindpunt, Files, een Governance- en Archief-app, de opslaginterface.
 - **Archiefwaardige laag:** objectenregister, resolver en sleutelbeheer naast S3-objectopslag met versiebeheer, Object Lock en legal hold; één bucket per schijf.
 - **Zes verzoeken aan Nextcloud:** wijzigingsmelding, gedelegeerde versiegeschiedenis, alleen-lezen metagegevens uit het register, bestuurde verwijdering, duurzame identiteit, en van bestand naar informatieobject. Alleen verzoek 3 en 4 vallen binnen de huidige opdracht.

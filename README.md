@@ -25,7 +25,7 @@ Or open it online: **[https://eha-1999.github.io/XENA/](https://eha-1999.github.
 | **File Explorer** | The desktop file explorer with drives M:, P:, I: and W:. Every drive is a bucket in one Nextcloud instance. |
 | **Document library** | The file list on a collaboration site, for example SharePoint, with columns for classification and retention. |
 | **Team channel** | The Files tab of a team channel, for example Teams. Choose the channel files or any connected drive. |
-| **Office Assistant** | An add-in in Word showing attributes, suggestions, accessibility and workflow next to the document. |
+| **Office Assistant** | An add-in for office suites, shown here in Word: attributes, suggestions, accessibility and workflow next to the document. The same set-up works in LibreOffice and other suites: one thin layer, with a small add-in per suite. |
 | **Architecture** | How the windows, Nextcloud, the register and the object storage fit together, with sample WebDAV and S3 messages. |
 | **Engineering** | Per feature, what it asks of Nextcloud: standard, extension point, core change, or something outside Nextcloud. |
 | **Roadmap** | Six steps from network drives to the long-term destination, with milestones and decision points. |
@@ -79,7 +79,7 @@ Inside claude.ai the connection does not work, because pages there may not make 
 
 ## Architecture and roadmap in brief
 
-- **Presentation layer:** File Explorer, Office with the Office Assistant, document library, team channel, Nextcloud Files in the browser, Nextcloud client.
+- **Presentation layer:** File Explorer, office suites (Word, LibreOffice and others) with the Office Assistant, document library, team channel, Nextcloud Files in the browser, Nextcloud client.
 - **Nextcloud:** WebDAV endpoint, Files, a governance and archive app, the storage interface.
 - **Records-grade layer:** an object register, a resolver and key management beside S3 object storage with versioning, Object Lock and legal hold; one bucket per drive.
 - **Six requests to Nextcloud:** change notification, delegated version history, read-only metadata from the register, governed deletion, durable identity, and from file to information object. Only requests 3 and 4 fall within the current assignment.
