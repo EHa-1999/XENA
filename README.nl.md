@@ -1,6 +1,6 @@
 # Archiefwaardige opslag voor de medewerker
 
-[English](README.md) · **Nederlands**
+[English](README.md) · **Nederlands** · [Deutsch](README.de.md)
 
 Een interactieve demo van hoe soevereine, archiefwaardige bestandsopslag op **Nextcloud** en **S3-objectopslag** eruitziet voor een gewone medewerker van een gemeente. Bewaartermijnen, legal hold, metagegevens en toegangsregels worden eronder afgedwongen, terwijl medewerkers blijven werken in de vensters die ze al kennen.
 
@@ -98,6 +98,7 @@ Binnen claude.ai werkt de koppeling niet, omdat pagina's daar geen verbindingen 
 index.html                  de demo
 README.md                   Engelse versie
 README.nl.md                dit bestand
+README.de.md                Duitse versie
 docs/                       schermafbeeldingen voor de README
 ```
 

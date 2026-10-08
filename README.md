@@ -1,6 +1,6 @@
 # Records-grade storage for the employee
 
-**English** · [Nederlands](README.nl.md)
+**English** · [Nederlands](README.nl.md) · [Deutsch](README.de.md)
 
 An interactive demo of what sovereign, records-grade file storage on **Nextcloud** and **S3 object storage** looks like for an ordinary municipal employee. Retention, legal hold, metadata and access rules are enforced underneath, while people keep working in the windows they already know.
 
@@ -98,6 +98,7 @@ Inside claude.ai the connection does not work, because pages there may not make 
 index.html                  the demo
 README.md                   this file (English)
 README.nl.md                Dutch version
+README.de.md                German version
 docs/                       screenshots used in the README
 ```
 
