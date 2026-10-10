@@ -1289,7 +1289,7 @@ function modal(m){
     const K={over:['p-green','Overgenomen'],verv:['p-amber','Vervangen'],weg:['p-red','Weggelaten'],reg:['p-violet','Uit het register']};
     const kw=[e.woo!==WOO[0]?e.woo:'',kl].filter(Boolean);
     const R=[
-      ['Titel','dc:title','<span>'+esc(x.name.replace(/\.[^.]+$/,''))+'</span>','<span>'+esc(x.name.replace(/\.[^.]+$/,''))+'</span>','over','Nodig voor toegankelijkheid en vindbaarheid. Staat er een naam in de titel, dan pas je die aan in de Assistent.'],
+      ['Titel','dc:title','<span data-notr>'+esc(tr(x.name).replace(/\.[^.]+$/,''))+'</span>','<span data-notr>'+esc(tr(x.name).replace(/\.[^.]+$/,''))+'</span>','over','Nodig voor toegankelijkheid en vindbaarheid. Staat er een naam in de titel, dan pas je die aan in de Assistent.'],
       ['Auteur','dc:creator','<span>'+esc(x.by||'')+'</span>','<span>'+e.zorg+'</span>','verv','De naam van de medewerker wordt de naam van de organisatie.'],
       ['Laatst gewijzigd door','','<span>'+esc(vers(x)[vers(x).length-1].by)+'</span>',gone,'weg',''],
       ['Uitgever','dc:publisher',no,'<span>'+e.zorg+'</span>','reg',''],
