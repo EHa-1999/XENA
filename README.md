@@ -25,6 +25,7 @@ Or open it online: **[https://eha-1999.github.io/XENA/](https://eha-1999.github.
 | **File Explorer** | The desktop file explorer with drives M:, P:, I: and W:. Every drive is a bucket in one Nextcloud instance. |
 | **Document library** | The file list on a collaboration site, for example SharePoint, with columns for classification and retention. |
 | **Team channel** | The Files tab of a team channel, for example Teams. Choose the channel files or any connected drive. |
+| **Search** | The search page in the web interface: search by name, attributes and content, with filters. In Woo mode (Dutch Open Government Act requests) you create a Woo dossier and add documents from the results. |
 | **Office Assistant** | An add-in for office suites, shown here in Word: attributes, suggestions, accessibility and workflow next to the document. The same set-up works in LibreOffice and other suites: one thin layer, with a small add-in per suite. |
 | **Architecture** | How the windows, Nextcloud, the register and the object storage fit together, with sample WebDAV and S3 messages. |
 | **Engineering** | Per feature, what it asks of Nextcloud: standard, extension point, core change, or something outside Nextcloud. |
@@ -35,7 +36,9 @@ The bar at the bottom (*Under the hood*) shows for every action which message go
 
 ## Main features
 
-- **Working with files:** create files, folders and dossiers; open, rename, copy, cut and paste; search the register's index; filter on attributes.
+- **Working with files:** create files, folders and dossiers; open, rename, copy, cut and paste; filter on attributes.
+- **Search:** by name, reference, identifier and content through the register's search index, with filters such as classification, confidentiality and personal data. The employee's permissions determine the search scope; encrypted content is not in the index.
+- **Woo requests:** a separate search mode in which you create a Woo dossier, add documents as references and record the search. The included version is pinned in the object storage for as long as the request is open; work on the document can continue.
 - **Records management:** business or personal, MDTO metadata, dossiers that pass on classification and retention, retention enforced by S3 Object Lock, legal hold.
 - **Correcting mistakes:** a revocation window after registration; for locked items, rendering content unreadable by destroying its key (crypto-shredding).
 - **Versions:** view and restore earlier versions; restoring creates a new version.

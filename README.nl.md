@@ -25,6 +25,7 @@ Of open hem online: **[https://eha-1999.github.io/XENA/](https://eha-1999.github
 | **Verkenner** | De bestandsverkenner op de pc met de schijven M:, P:, I: en W:. Elke schijf is een bucket in één Nextcloud-omgeving. |
 | **Documentbibliotheek** | De bestandenlijst op een samenwerkingssite, bijvoorbeeld SharePoint, met kolommen voor classificatie en bewaring. |
 | **Teamkanaal** | Het tabblad Bestanden in een teamkanaal, bijvoorbeeld Teams. Kies de kanaalbestanden of een gekoppelde schijf. |
+| **Zoeken** | De zoekpagina in de webinterface: zoeken op naam, kenmerken en inhoud, met filters. In de Woo-modus maak je een Woo-dossier aan en voeg je documenten toe vanuit de resultaten. |
 | **Office Assistent** | Een invoegtoepassing voor kantoorpakketten, hier getoond in Word: kenmerken, suggesties, toegankelijkheid en workflow naast het document. Dezelfde opzet werkt in LibreOffice en andere pakketten: één dunne tussenlaag, met per pakket een kleine invoegtoepassing. |
 | **Architectuur** | Hoe vensters, Nextcloud, register en objectopslag samenhangen, met voorbeelden van WebDAV- en S3-berichten. |
 | **Techniek** | Per functie wat die van Nextcloud vraagt: standaard, uitbreidingspunt, kernwijziging of iets buiten Nextcloud. |
@@ -35,7 +36,9 @@ De balk onderaan (*Onder de motorkap*) toont bij elke handeling welk bericht naa
 
 ## Belangrijkste functies
 
-- **Werken met bestanden:** bestanden, mappen en dossiers aanmaken; openen, hernoemen, kopiëren, knippen en plakken; zoeken in de zoekindex van het register; filteren op kenmerken.
+- **Werken met bestanden:** bestanden, mappen en dossiers aanmaken; openen, hernoemen, kopiëren, knippen en plakken; filteren op kenmerken.
+- **Zoeken:** op naam, kenmerk, identificatie en inhoud via de zoekindex van het register, met filters op onder meer classificatie, vertrouwelijkheid en persoonsgegevens. De rechten van de medewerker bepalen het zoekbereik; versleutelde inhoud staat niet in de index.
+- **Woo-verzoeken:** een aparte zoekmodus waarin je een Woo-dossier aanmaakt, documenten als verwijzing toevoegt en de zoekslag vastlegt. De opgenomen versie wordt vastgezet in de objectopslag zolang het verzoek loopt; doorwerken blijft mogelijk.
 - **Informatiebeheer:** zakelijk of persoonlijk, metagegevens volgens MDTO, dossiers die classificatie en bewaartermijn doorgeven, bewaartermijn afgedwongen met S3 Object Lock, legal hold.
 - **Vergissingen herstellen:** een herroepingstermijn na registratie; voor vergrendelde stukken het onleesbaar maken van de inhoud door de sleutel te vernietigen.
 - **Versies:** eerdere versies bekijken en terugzetten; terugzetten maakt een nieuwe versie.

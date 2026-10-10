@@ -25,6 +25,7 @@ Oder online öffnen: **[https://eha-1999.github.io/XENA/](https://eha-1999.githu
 | **Explorer** | Der Datei-Explorer auf dem PC mit den Laufwerken M:, P:, I: und W:. Jedes Laufwerk ist ein Bucket in einer einzigen Nextcloud-Umgebung. |
 | **Dokumentbibliothek** | Die Dateiliste auf einer Teamwebsite, zum Beispiel SharePoint, mit Spalten für Klassifikation und Aufbewahrung. |
 | **Teamkanal** | Die Registerkarte Dateien in einem Teamkanal, zum Beispiel Teams. Wählbar sind die Kanaldateien oder ein verbundenes Laufwerk. |
+| **Suche** | Die Suchseite in der Weboberfläche: Suche nach Name, Merkmalen und Inhalt, mit Filtern. Im Woo-Modus (Anträge nach dem niederländischen Gesetz über die offene Verwaltung) legen Sie eine Woo-Akte an und fügen Dokumente aus den Ergebnissen hinzu. |
 | **Office-Assistent** | Ein Add-in für Office-Pakete, hier in Word gezeigt: Merkmale, Vorschläge, Barrierefreiheit und Workflow neben dem Dokument. Derselbe Aufbau funktioniert in LibreOffice und anderen Paketen: eine dünne Zwischenschicht, je Paket ein kleines Add-in. |
 | **Architektur** | Wie Oberflächen, Nextcloud, Register und Objektspeicher zusammenhängen, mit Beispielen für WebDAV- und S3-Nachrichten. |
 | **Technik** | Je Funktion, was sie von Nextcloud verlangt: Standard, Erweiterungspunkt, Kernänderung oder etwas außerhalb von Nextcloud. |
@@ -35,7 +36,9 @@ Die Leiste unten (*Unter der Haube*) zeigt bei jeder Aktion, welche Nachricht an
 
 ## Wichtigste Funktionen
 
-- **Arbeiten mit Dateien:** Dateien, Ordner und Akten anlegen; öffnen, umbenennen, kopieren, ausschneiden und einfügen; im Suchindex des Registers suchen; nach Merkmalen filtern.
+- **Arbeiten mit Dateien:** Dateien, Ordner und Akten anlegen; öffnen, umbenennen, kopieren, ausschneiden und einfügen; nach Merkmalen filtern.
+- **Suche:** nach Name, Kennzeichen, Identifikation und Inhalt über den Suchindex des Registers, mit Filtern wie Klassifikation, Vertraulichkeit und personenbezogenen Daten. Die Rechte der Mitarbeitenden bestimmen den Suchbereich; verschlüsselte Inhalte stehen nicht im Index.
+- **Woo-Anträge:** ein eigener Suchmodus, in dem Sie eine Woo-Akte anlegen, Dokumente als Verweis hinzufügen und den Suchlauf festhalten. Die aufgenommene Version wird im Objektspeicher festgesetzt, solange der Antrag läuft; die Weiterarbeit am Dokument bleibt möglich.
 - **Schriftgutverwaltung:** dienstlich oder persönlich, Metadaten nach MDTO (dem niederländischen Metadatenstandard für Archivgut), Akten, die Klassifikation und Aufbewahrungsfrist weitergeben, Aufbewahrungsfrist durchgesetzt mit S3 Object Lock, Legal Hold.
 - **Irrtümer korrigieren:** eine Widerrufsfrist nach der Registrierung; bei gesperrten Objekten das Unlesbarmachen des Inhalts durch Vernichten des Schlüssels (Crypto-Shredding).
 - **Versionen:** frühere Versionen ansehen und wiederherstellen; das Wiederherstellen erzeugt eine neue Version.
