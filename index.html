@@ -594,7 +594,7 @@ details.wfd>summary{cursor:pointer;color:var(--accent);font-weight:500;font-size
 <script>
 (function(){
 'use strict';
-const DEMO={v:'33',d:'2026-10-10'};
+const DEMO={v:'34',d:'2026-11-05'};
 const USER='Sanne de Vries';
 const NOW=()=>new Date();
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -2631,7 +2631,7 @@ const A={
     toast(nx?'Afgerond. De volgende stap ligt bij '+nx.who+'.':'Afgerond. De workflow is voltooid.');},
   closepanel(){S.panel=null;S.draft=null},
   cancel(){S.modal=null},
-  scrim(el,id,ev){if(ev.target===el)S.modal=null},
+  scrim(){S.modal=null},
   new(){let t=newTarget();if(N[t].virtual){toast('Kies eerst een map of dossier.');return}if(blocked(N[t])){S.modal={type:'noaccess',id:t};return}const d=dossierOf(N[t]);if(d&&d.hold){toast('Dit dossier is bevroren. Er kan niets worden toegevoegd.');return}
     S.modal={type:'new',target:t,ext:'docx',name:tr('Nieuw document')+'.docx'}},
   newtype(el){const m=S.modal,inp=document.getElementById('new-name');let nm=inp?inp.value:m.name;const i=nm.lastIndexOf('.'),base=isCont(m.ext)||i<=0?nm:nm.slice(0,i),v=el.dataset.v;
@@ -2707,6 +2707,8 @@ function commitRename(val){
 
 /* ---------- gebeurtenissen ---------- */
 let lastClick={id:null,t:0};
+let scrimDown=null;
+document.addEventListener('mousedown',ev=>{scrimDown=ev.target},true);
 document.addEventListener('click',ev=>{
   {const a=ev.target.closest&&ev.target.closest('.hnav a');if(a){ev.preventDefault();const t=document.querySelector(a.getAttribute('href'));if(t)t.scrollIntoView({behavior:'smooth',block:'start'});return}}
   if(ev.target.closest&&ev.target.closest('select,option'))return;
@@ -2715,7 +2717,8 @@ document.addEventListener('click',ev=>{
   const hadMenu=!!S.menu;if(hadMenu&&!(actEl&&actEl.closest('.menu')))S.menu=null;
   if(actEl){
     if(actEl.disabled)return;const act=actEl.dataset.act,id=rowEl?rowEl.dataset.id:null;
-    if(act==='scrim'&&ev.target!==actEl)return;
+    /* Naast de popup klikken sluit alleen als de muisknop ook naast de popup is ingedrukt (slepen vanuit de popup telt niet) en de popup geen invulvelden heeft. */
+    if(act==='scrim'&&(ev.target!==actEl||scrimDown!==actEl||actEl.querySelector('input:not([readonly]),select,textarea')))return;
     if(actEl.closest('.menu'))S.menu=null;
     {const ga=act==='ptab'?({wf:'workflow',ver:'versions',props:'props'})[actEl.dataset.v]:act,gt=ga&&['verkenner','bibliotheek','team','zoek'].includes(S.view)?gate(ga):null;
       if(gt&&gt.later){toast('Komt in stap '+gt.later+' van het groeipad: '+GP[gt.later].t+', '+GP[gt.later].w+'.');render(!!rowEl);return}}
